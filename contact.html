@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Olivia Isaacs</title>
+		<link rel="stylesheet" type="text/css" href="aboutstyle.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+	</head>
+	<header>
+		<div class="page image-bar">
+			<img id="header-image" src="img/headerimage2.jpg" alt= "Header image of cherry blossoms." />
+		</div>
+		<div class="sitelinks">
+			<nav>
+				<ul class="sitemap">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="experience.html">Experience</a></li>
+					<li id="eastnav" class="active"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<body class="contbody">
+		<div class="cont wrapper">
+			<div class="intro">
+				<h1 id="contact" style="font-size:5vw">Contact</h1>
+				<p id="contoverview" style="font-size:2vw">
+					Please contact me here!
+				</p>
+				<div class="securecontact">
+					<form action="submit.php" method="post">
+
+						<p>Your name: <input type="text" name="name" /></p>
+
+						<p>Your email: <input type="text" name="email" /></p>
+
+						<p class="antispam">Leave this empty: <input type="text" name="url" /></p>
+
+						<p><textarea name="message"></textarea></p>
+
+						<p><input type="submit" value="Send" /></p>
+
+					</form>
+				</div>
+				<div class="contactform">
+					<form action="contact.php" method="POST">
+					
+						<label id="name" for="fname">Name</label>
+						<input type="text" id="name" name="name"></input>
+											
+						<label id="email" for="email">Email</label>
+						<input id="email" name="email"></input>
+															
+						<label id="message" for="message">Message</label>
+						<textarea id="message" name="message" rows="4" cols="25" placeholder="Write something.." style="height: 200px"></textarea>
+						
+						
+						<input type="submit" value="Send"><input type="reset" value="Clear">
+					
+					</form>
+				</div>
+					
+					
+				</div>
+			</div>
+
+		</div>	
+	</body>
+</html>
